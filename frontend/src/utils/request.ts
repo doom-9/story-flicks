@@ -8,7 +8,8 @@ interface RequestConfig {
     params?: object;
 }
 
-let baseUrl = 'http://127.0.0.1:8000';
+// let baseUrl = 'http://127.0.0.1:8000';
+let baseUrl = 'https://ai-story-server.sineai.cn';
 
 export function request<T>(config: RequestConfig): Promise<T> {
     return new Promise((resolve, reject) => {
